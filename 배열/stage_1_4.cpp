@@ -11,20 +11,27 @@ int main()
         intArr[i] = intArr[i] % 42;
     }
 
-    int count = 1;
+    int count = 0;
     for (int i = 0; i < 10; i++)
-    {   
+    {
         bool check = false;
-        for (int ii = i; ii < 10; ii++)
+        for (int ii = i + 1; ii < 10; ii++)
         {
-            if(intArr[i] == intArr[ii]){
+            if (intArr[i] == intArr[ii])
+            {
                 check = true;
                 break;
             }
         }
-        if(check == false){
+
+        if (check == false)
+        {
             count += 1;
         }
+
+        if (i == 9)
+            break;
+
     }
 
     cout << count;
