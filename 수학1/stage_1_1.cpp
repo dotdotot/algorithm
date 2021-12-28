@@ -18,22 +18,11 @@ int main()
     cin >> a >> b >> c;
 
     int allCost = a;
+    int sales = c-b;
     int count = 0;
-
     if (b < c)
     {
-        while (true)
-        {
-            count++;
-
-            allCost += b;
-            allCost -= c;
-
-            if (allCost < 0)
-            {
-                break;
-            }
-        }
+        count = allCost/sales + 1;
     }
     else
     {
