@@ -25,11 +25,11 @@ using namespace std;
 int main()
 {
 
-    int testCase = 0;
+    long long testCase = 0;
     cin >> testCase;
 
-    int *X = new int[testCase];
-    int *Y = new int[testCase];
+    long long *X = new long long[testCase];
+    long long *Y = new long long[testCase];
 
     for (int i = 0; i < testCase; i++)
     {
@@ -39,7 +39,7 @@ int main()
     for (int i = 0; i < testCase; i++)
     {
         // 루트를 왜 씌우는 것?? 아 수학모르겠다 진짜로
-        int count = sqrt(Y[i] - X[i]);
+        long long count = sqrt(Y[i] - X[i]);
 
         if (count * count == Y[i] - X[i])
         {
