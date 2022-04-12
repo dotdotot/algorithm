@@ -6,19 +6,8 @@ using namespace std;
 int main()
 {   
     
-    string textArr[15];
-    for (int i = 0; i < 15; i++)
-    {
-        getline(cin, textArr[i]);
-    }
-
-    string text;
-    for (int i = 0; i < 15; i++)
-    {
-        text += textArr[i];
-    }
-
-    cout << text;
-
+    int a,b,c;
+    scanf("%d %d %d", &a, &b, &c);
+    printf("%.1lf",(double)(a+b+c)/3);
     return 0;
 }
