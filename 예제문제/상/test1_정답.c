@@ -5,18 +5,19 @@ int main(void){
     int secondNum;
     int tmp;
 
-    printf("ë³€ìˆ˜1ì˜ ê°’ : ");
+    printf("º¯¼ö1ÀÇ °ª : ");
     scanf("%d",&firstNum);
-    printf("ë³€ìˆ˜2ì˜ ê°’ : ");
+    printf("º¯¼ö2ÀÇ °ª : ");
     scanf("%d",&secondNum);
 
     tmp = firstNum;
     firstNum = secondNum;
     secondNum = tmp;
 
+    int n = 10;
     printf("----------------\n");
-    printf("ë³€ìˆ˜1ì˜ ê°’ : %d\n",firstNum);
-    printf("ë³€ìˆ˜2ì˜ ê°’ : %d\n",secondNum);
+    printf("%d \n",n = (4,5));
+    printf("º¯¼ö2ÀÇ °ª : %d\n",secondNum);
 
     return 0;
 }
