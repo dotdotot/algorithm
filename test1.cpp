@@ -1,26 +1,74 @@
-#include<iostream>
-#include<string>
-#include<vector>
-#include<sstream>
-using namespace std;
+#include <stdio.h>
+
+int cal(int next, int day, int i)
+{
+    printf("\n-------------%d월-------------\n", i);
+    printf("일\t월\t화\t수\t목\t금\t토\n");
+    for (int ii = 0; ii < next; ii++)
+    {
+        printf("\t");
+    }
+    for (int day = 1; day <= 31; day++)
+    {
+        if (next == 7)
+        {
+            printf("\n");
+            next = 0;
+        }
+        printf("%d\t", day);
+
+        next++;
+    }
+
+    return next;
+}
 
 int main(void)
 {
-    string str="-1234";
-    istringstream ss(str);
-    string stringBuffer;
-    vector<string> x;
-    x.clear();
-    cout<<"어떻게 잘리는지 확인해봅시다 ->";
-    //구분자가 , 이라면 getline(ss, stringBuffer, ',')쓰면됨
-    while (getline(ss, stringBuffer, '-')){
-        x.push_back(stringBuffer);
-        cout<<stringBuffer<<" ";
+    int next = 6;
+
+    for (int i = 1; i <= 12; i++)
+    {
+        switch (i)
+        {
+        case 1:
+            next = cal(next, 31, i);
+            break;
+        case 2:
+            next = cal(next, 28, i);
+            break;
+        case 3:
+            next = cal(next, 31, i);
+            break;
+        case 4:
+            next = cal(next, 30, i);
+            break;
+        case 5:
+            next = cal(next, 31, i);
+            break;
+        case 6:
+            next = cal(next, 30, i);
+            break;
+        case 7:
+            next = cal(next, 31, i);
+            break;
+        case 8:
+            next = cal(next, 31, i);
+            break;
+        case 9:
+            next = cal(next, 30, i);
+            break;
+        case 10:
+            next = cal(next, 31, i);
+            break;
+        case 11:
+            next = cal(next, 30, i);
+            break;
+        case 12:
+            next = cal(next, 31, i);
+            break;
+        }
     }
-    
-    cout<<endl<<"vector 값을 출력해보자."<<endl;
-    for(int i=0;i<x.size();i++){
-        cout<<x[i]<<endl;
-    }
+
     return 0;
 }

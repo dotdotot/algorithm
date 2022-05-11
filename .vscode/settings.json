@@ -46,5 +46,6 @@
         "xutility": "cpp",
         "string": "cpp",
         "vector": "cpp"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
