@@ -13,7 +13,8 @@ int main(){
 
         if(num1 == 0 && num2 == 0)
             break;
-        cout << num1 + num2 << "\n";
+        else
+            cout << num1 + num2 << "\n";
     }
     
 
