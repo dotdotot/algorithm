@@ -45,7 +45,8 @@
         "xtr1common": "cpp",
         "xutility": "cpp",
         "string": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "sstream": "cpp"
     },
     "liveServer.settings.port": 5501
 }

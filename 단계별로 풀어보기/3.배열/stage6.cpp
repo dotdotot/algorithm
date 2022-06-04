@@ -19,7 +19,13 @@
 using namespace std;
 
 int main(){
+    char name[6];
+    cin >> name;
+    cout << name[5];
+
     int size;
+    cin >> size;
+    // getline()
     scanf("%d",&size);
     cin.ignore();
 
